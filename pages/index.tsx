@@ -24,8 +24,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
   priority
 />
       
-      <h1>Solar Institute</h1>
-      <p>Welcome to the Solar Institute Archive!</p>
+      <h1>SOLAR INSTITUTE</h1>
 
 <Image
   alt={`Waves`}
