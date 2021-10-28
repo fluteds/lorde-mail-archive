@@ -15,7 +15,7 @@ export const About = (): JSX.Element => {
 
       <h1>Open Source</h1>
       <p>The archive is open sourced!</p>
-      <p>If you'd like to contribute to the archive please check out the GitHub.</p>
+      <p>If you&apos;d like to contribute to the archive please check out the GitHub.</p>
     </Layout>
   );
 };
