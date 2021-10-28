@@ -11,7 +11,7 @@ const Navigation = (): JSX.Element => {
         <a className="font-semibold text-yellow-900 dark:text-yellow px-6 py-4">ABOUT</a>
       </Link>
       <Link href="https://www.lorde.co.nz/sign-up">
-        <a className="font-semibold text-yellow-900 dark:text-yellow px-6 py-4">MAILING LIST</a>
+        <a className="font-semibold text-yellow-900 dark:text-yellow px-6 py-4">MAILING</a>
       </Link>
     </nav>
   );
