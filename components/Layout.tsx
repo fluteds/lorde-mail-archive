@@ -28,9 +28,9 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
       </main>
       <footer className="py-8">
         <div className="text-yellow-900 max-w-5xl px-8 mx-auto">
-          Lorde Mail Archive. Built by{' '}
+          Lorde Mail Archive • Built by{' '}
           <a
-            className="text-yellow-900 dark:text-white"
+            className="text-yellow-900 dark:text-yellow"
             href="https://github.com/fluteds"
           >
             Fluteds

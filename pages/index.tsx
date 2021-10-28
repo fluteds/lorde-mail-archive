@@ -5,6 +5,8 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { getAllPosts } from '../lib/api';
 import { PostType } from '../types/post';
+import Image from 'next/image';
+
 
 type IndexProps = {
   posts: PostType[];
@@ -13,17 +15,34 @@ type IndexProps = {
 export const Index = ({ posts }: IndexProps): JSX.Element => {
   return (
     <Layout>
-      <h1>Home</h1>
-      <p>Welcome to the Archive.</p>
+
+<Image
+  alt={`Lorde`}
+  src={`/images/logo.png`}
+  width={1000}
+  height={558}
+  priority
+/>
+      
+      <h1>Solar Institute</h1>
+      <p>Welcome to the Solar Institute Archive!</p>
+
+<Image
+  alt={`Waves`}
+  src={`/images/waves.png`}
+  width={800}
+  height={86}
+  priority
+/>      
 
       {posts.map((post) => (
         <article key={post.slug} className="mt-12">
-          <p className="mb-1 text-sm text-gray-500 dark:text-gray-400">
-            {format(parseISO(post.date), 'MMMM dd, yyyy')}
+          <p className="mb-1 text-sm text-yellow-500 dark:text-yellow-400">
+            {format(parseISO(post.date), 'dd MMMM, yyyy')}
           </p>
           <h1 className="mb-2 text-xl">
             <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`}>
-              <a className="text-gray-900 dark:text-white dark:hover:text-blue-400">
+              <a className="text-yellow-900 dark:text-yellow dark:hover:text-blue-400">
                 {post.title}
               </a>
             </Link>
